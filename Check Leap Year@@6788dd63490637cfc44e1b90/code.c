@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 bool isLeap(int y) {
     if (y % 4 == 0){
         if (y % 100 == 0){
@@ -9,7 +8,6 @@ bool isLeap(int y) {
     }
     return false;
 }
-
 int main() {
     int year;
     scanf("%d", &year);
