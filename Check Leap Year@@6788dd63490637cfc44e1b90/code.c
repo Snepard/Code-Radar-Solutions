@@ -1,19 +1,19 @@
 #include <stdio.h>
-bool isLeap(int y) {
-    if (y % 4 == 0){
-        if (y % 100 == 0){
-            return (y % 400 == 0);
-        }
-        return true;
-    }
-    return false;
-}
-void main() {
+
+int main() {
     int year;
     scanf("%d", &year);
-    if(isLeap(year)){
+    if (year % 4 == 0){
+        if (y % 100 == 0){
+            if (y % 400 == 0){
+                printf("Leap Year");
+                break;
+            }
+            printf("Not a Leap Year");
+        }
         printf("Leap Year");
-    } else{
-        printf("Not a Leap Year");
+    }else{
+    printf("Not a Leap Year");
     }
+    return 0;
 }
