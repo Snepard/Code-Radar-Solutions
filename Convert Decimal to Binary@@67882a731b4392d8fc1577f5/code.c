@@ -3,12 +3,15 @@
 int main() {
     int n;
     scanf("%d", &n);
-    for (int i=31; i>=0; i--) {
-        if(n>>i & 1) {
-            printf("1");
-        }else{
-            printf("0");
-        }
+    int bin[32];
+    int i = 0;
+    while (n>0) {
+        bin[i] = n%2;
+        n /= 2;
+        i++;
+    }
+    for (int j = i-1; j<=0; j--) {
+        printf("%d", bin[j]);
     }
     return 0;
 }
