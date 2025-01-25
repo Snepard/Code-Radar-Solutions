@@ -8,7 +8,7 @@ bool isLeap(int y) {
     }
     return false;
 }
-int main() {
+void main() {
     int year;
     scanf("%d", &year);
     if(isLeap(year)){
@@ -16,5 +16,4 @@ int main() {
     } else{
         printf("Not a Leap Year");
     }
-    return 0;
 }
