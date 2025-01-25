@@ -4,6 +4,16 @@ int main() {
     int n;
     scanf("%d", &n);
     n = n & (n - 1); 
-    printf("%d", n & -n);
+    int slb = n & -n;
+    if (slb == 0) {
+        printf("0\n");
+    } else {
+        int pos = 0;
+        while (slb > 1) {
+            slb >>= 1;
+            pos++;
+        }
+        printf("%d\n", pos);
+    }
     return 0;
 }
