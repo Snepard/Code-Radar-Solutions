@@ -10,9 +10,9 @@ int main() {
     } else if (m>=70){
         printf("C");
     } else if (m>=60){
-        printf("D")
+        printf("D");
     } else {
-        printf("F")
+        printf("F");
     }
     return 0;
 }
