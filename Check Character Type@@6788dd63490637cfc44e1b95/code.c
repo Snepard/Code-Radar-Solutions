@@ -4,7 +4,7 @@ int main() {
     char ch;
     scanf("%c", &ch);
     if (ch >= 'A' && ch <= 'Z') {
-        ch += ('a' - 'A')
+        ch += ('a' - 'A');
     }
     if (ch >= 'a' && ch <= 'z'){
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == "o" || ch == "u") {
