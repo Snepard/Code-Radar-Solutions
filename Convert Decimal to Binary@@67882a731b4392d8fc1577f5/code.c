@@ -3,12 +3,12 @@
 int main() {
     int n;
     scanf("%d", &n);
-    int one = 0;
+    int lzero = 1;
     for (int i=31; i>=0; i--) {
-        if (n & (i << 1)) {
+        if (n>>i & 1) {
             printf("1");
-            one = 1;
-        } else if (one) {
+            lzero = 0;
+        } else if (!lzero) {
             printf("0");
         }
     }
