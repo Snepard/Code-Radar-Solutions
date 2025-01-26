@@ -10,6 +10,5 @@ int main() {
     } else{
         printf("Negative");
     }
-    printf("%s", welcome());
     return 0;
 }
