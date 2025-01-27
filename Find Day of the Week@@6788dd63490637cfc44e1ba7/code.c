@@ -19,7 +19,7 @@ int main() {
     } else{
         printf("Sunday");
     }
-    
+
     // switch (d){
     //     case 1:
     //         printf("Monday");
@@ -42,6 +42,6 @@ int main() {
     //     case 7:
     //         printf("Sunday");
     //         break;
-    }
+    // }
     return 0;
 }
