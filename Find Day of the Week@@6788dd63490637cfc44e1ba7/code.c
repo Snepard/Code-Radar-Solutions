@@ -18,6 +18,8 @@ int main() {
         printf("Saturday");
     } else if (d==7){
         printf("Sunday");
+    } else{
+        printf("Invalid");
     }
 
     // switch (d){
