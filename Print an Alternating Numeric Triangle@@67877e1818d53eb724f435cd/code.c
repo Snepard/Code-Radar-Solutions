@@ -7,7 +7,7 @@ int main() {
         for (int j=0; j<i; j++){
             printf("%d ", (i+j)%2);
         }
-        printf(" ");
+        printf("\n");
     }
     return 0;
 }
