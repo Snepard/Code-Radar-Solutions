@@ -12,7 +12,7 @@ int main() {
             printf("0");
         }
     }
-    if (n=0){
+    if (n==0){
         printf("0");
     }
     return 0;
