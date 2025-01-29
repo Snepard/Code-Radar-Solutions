@@ -12,5 +12,8 @@ int main() {
             printf("0");
         }
     }
+    if (n=0){
+        printf("%d", n);
+    }
     return 0;
 }
