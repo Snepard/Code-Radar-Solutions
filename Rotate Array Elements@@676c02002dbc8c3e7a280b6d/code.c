@@ -3,6 +3,9 @@
 int main() {
     int n,k;
     scanf("%d", &n);
+    if(n<=0){
+        return 1;
+    }
     int nums[n];
     for (int i=0; i<n; i++){
         scanf("%d", &nums[i]);
