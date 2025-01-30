@@ -2,10 +2,12 @@
 
 int main() {
     int n,k;
+    scanf("%d", &n);
     int nums[n];
     for (int i=0; i<n; i++){
-        scanf("%d", nums[i]);
+        scanf("%d", &nums[i]);
     }
+    scanf("%d", &k);
     int temp = nums[n-1];
     for (int i=0; i<k; i++){
         for (int j=n-1; j>0; j++){
