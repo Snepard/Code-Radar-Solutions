@@ -8,7 +8,7 @@ int main() {
         scanf("%d", &nums[i]);
     }
     int sorted = 1;
-    for (int i=0;i<n;i++){
+    for (int i=0;i<n-1;i++){
         if(nums[i]>nums[i+1]){
             sorted = 0;
             break;
