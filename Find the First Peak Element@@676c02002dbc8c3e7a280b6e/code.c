@@ -17,8 +17,9 @@ int main() {
             return 0;
         }
     }
+
     if (nums[n]>nums[n-1]){
-        printf("%d", nums[n]);
+        printf("%d", nums[n-1]);
     } else{
         printf("%d", -1);
     }
