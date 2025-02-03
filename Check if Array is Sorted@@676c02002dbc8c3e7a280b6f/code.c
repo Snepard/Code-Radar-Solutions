@@ -2,8 +2,8 @@
 
 int main() {
     int n;
-    int nums[n];
     scanf("%d", &n);
+    int nums[n];
     for (int i=0; i<n; i++){
         scanf("%d", &nums[i]);
     }
