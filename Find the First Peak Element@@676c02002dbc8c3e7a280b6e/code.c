@@ -18,7 +18,7 @@ int main() {
         }
     }
 
-    if (nums[n]>nums[n-1]){
+    if (nums[n-1]>nums[n-2]){
         printf("%d", nums[n-1]);
     } else{
         printf("%d", -1);
