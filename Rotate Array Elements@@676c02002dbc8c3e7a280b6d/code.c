@@ -5,7 +5,7 @@ int main() {
     if(n<=0){
         return 1;
     }
-    int nums[n];
+    int *nums = (int*)malloc(n*sizeof(int));
     for (int i=0; i<n; i++){
         scanf("%d", &nums[i]);
     }
