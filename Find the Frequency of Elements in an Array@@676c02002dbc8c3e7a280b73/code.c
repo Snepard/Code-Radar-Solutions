@@ -9,7 +9,7 @@ int main() {
         scanf("%d", &nums[i]);
     }
 
-    for (int i=0; i<n; i++s){
+    for (int i=0; i<n; i++){
         int count = 0, isUsed = 0;
         for (int j=0; j<usedCount; j++){
             if(nums[i]==used[j]){
