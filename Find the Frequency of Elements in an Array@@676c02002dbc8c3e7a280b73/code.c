@@ -14,7 +14,7 @@ int main() {
                 flag = 0;
             }
         }
-        if (flag = 1){
+        if (flag == 1){
             for (int j=0; j<n; j++){
                 if(nums[i]==nums[j]){
                     c++;
