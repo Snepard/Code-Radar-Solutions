@@ -29,6 +29,5 @@ int main() {
             printf("%d %d\n", nums[i], count);
         }
     }
-    printf("\n");
     return 0;
 }
