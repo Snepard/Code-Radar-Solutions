@@ -10,7 +10,7 @@ int main() {
     }
 
     for (int i=0; i<n; i++){
-        int c = 0, isUsed = 0;
+        int count = 0, isUsed = 0;
         for (int j=0; j<usedCount; j++){
             if(nums[i]==used[j]){
                 isUsed = 1;
