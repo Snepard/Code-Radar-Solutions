@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n, odd, even;
+    int n, odd=0, even=0;
     scanf("%d", &n);
     int nums[n]; 
     for (int i=0; i<n; i++){
