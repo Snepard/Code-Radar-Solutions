@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
     int n, l=-1; sl=-1;
     scanf("%d", &n);
