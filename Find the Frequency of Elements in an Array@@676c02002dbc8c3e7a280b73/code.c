@@ -22,7 +22,7 @@ int main() {
                 nums[j] = j-n;
             }
             used[i] = nums[i];
-        }
+        // }
         printf("%d %d\n", nums[i], c);
     }
     return 0;
