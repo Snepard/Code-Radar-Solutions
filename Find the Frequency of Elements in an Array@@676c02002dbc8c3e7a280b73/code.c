@@ -25,7 +25,9 @@ int main() {
             }
             used[usedCount++] = nums[i];
         }
-        printf("%d %d\n", nums[i], count);
+        if (count != 0){
+            printf("%d %d\n", nums[i], count);
+        }
     }
     return 0;
 }
