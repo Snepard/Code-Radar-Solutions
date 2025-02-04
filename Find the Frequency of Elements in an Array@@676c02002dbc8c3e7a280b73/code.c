@@ -28,7 +28,7 @@ int main() {
         if (count != 0){
             printf("%d %d\n", nums[i], count);
         }
-        printf("\n");
     }
+    printf("\n");
     return 0;
 }
