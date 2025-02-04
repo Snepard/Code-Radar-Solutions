@@ -19,7 +19,7 @@ int main() {
                 if(nums[i]==nums[j]){
                     c++;
                 }
-                nums[i] = j-n;
+                nums[j] = j-n;
             }
             used[i] = nums[i];
         // }
