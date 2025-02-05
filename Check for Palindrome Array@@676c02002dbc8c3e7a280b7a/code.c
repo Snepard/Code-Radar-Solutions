@@ -13,6 +13,6 @@ int main() {
             return 0;
         }
     }
-    printf("Yes");
+    printf("YES");
     return 0;
 }
