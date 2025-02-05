@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 int main() {
     int n;
     scanf("%d", &n);
@@ -6,7 +7,7 @@ int main() {
     for (int i=0; i<n; i++){
         scanf("%d", &nums[i]);
     }
-    int s = nums[0], ss = -1;
+    int s = INT_MAX, ss = INT_MAX;
     for (int i=0; i<n; i++){
         if(nums[i]<s){
             ss = s;
@@ -14,6 +15,10 @@ int main() {
         } else if (nums[i] > s && nums[i] < ss) {
             ss = nums[i];
         }
+    }
+    if (ss == INT_MAX){
+        printf("-1");
+        return 0;
     }
     printf("%d", ss);
     return 0;
