@@ -22,7 +22,7 @@ int main() {
     scanf("%d", &n);
     int nums[n];
     for (int i=0; i<n; i++){
-        scanf("%d", nums[i]);
+        scanf("%d", &nums[i]);
     }
     mono = isAscending(nums, n) || isDescending(nums, n);
     if (mono == 1){
