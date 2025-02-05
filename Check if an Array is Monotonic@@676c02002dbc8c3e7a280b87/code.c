@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int isAscending(int arr[], n){
+int isAscending(int arr[], int n){
     for (int i=0; i<n; i++){
         if(arr[i+1]<arr[i]){
             return 0;
@@ -8,7 +8,7 @@ int isAscending(int arr[], n){
     }
     return 1;
 }
-int isDescending(int arr[], n){
+int isDescending(int arr[], int n){
     for (int i=0; i<n; i++){
         if(arr[i+1]>arr[i]){
             return 0;
