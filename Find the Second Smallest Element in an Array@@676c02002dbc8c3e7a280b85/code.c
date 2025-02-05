@@ -8,7 +8,7 @@ int main() {
     }
     int s = nums[0], ss = -1;
     for (int i=0; i<n; i++){
-        if(nums[i]<=s){
+        if(nums[i]<s){
             ss = s;
             s = nums[i];
         } else if(nums[i]<ss && nums[i]>ss){
