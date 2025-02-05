@@ -22,7 +22,7 @@ int main() {
     for (int i=0; i<n-1; i++){
         if(nums[i+1] != nums[i]+1){
             printf("%d", nums[i]+1);
-            return 0;
+            break;
         }
     }
     return 0;
