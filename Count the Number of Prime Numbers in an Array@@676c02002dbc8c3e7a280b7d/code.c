@@ -9,8 +9,10 @@ int main() {
     }
     for (int i=0; i<n; i++){
         for (int j=2; j<=nums[i]/2; j++){
+            if (nums[i]!=1){
             if (nums[i]%j == 0){
                 flag = 1;
+            }
             }
         }
         if (flag == 0){
