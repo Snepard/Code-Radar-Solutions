@@ -41,6 +41,6 @@ int main() {
             c == 0;
         }
     }
-    print("%d", maxVal(count, m))
+    printf("%d", maxVal(count, m))
     return 0;
 }
