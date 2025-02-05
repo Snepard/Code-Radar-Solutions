@@ -13,6 +13,9 @@ int main() {
             sum += (arr[i]%10);
             arr[i]/=10;
         }
+        if (sum<0){
+            sum = -sum;
+        }
         printf("%d ", sum);
     }
     return 0;
