@@ -33,7 +33,7 @@ int main() {
         scanf("%d", &nums[i]);
     }
     bubbleSort(nums, n);
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n-1; i++){
         if(nums[i+1] == nums[i]+1){
             c++;
         }else{
