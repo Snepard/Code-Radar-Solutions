@@ -17,6 +17,7 @@ int main() {
         }
         if(f>maxFreq){
             maxNum = nums[i];
+            maxFreq = f;
         }
     }
     printf("%d", maxNum);
