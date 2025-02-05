@@ -8,7 +8,7 @@ int main() {
         scanf("%d", &nums[i]);
     }
     for (int i=0; i<n; i++){
-        for (int j=2; j<i/2; j++){
+        for (int j=2; j<=nums[i]/2; j++){
             if (nums[i]%j == 0){
                 flag = 1;
             }
@@ -16,7 +16,8 @@ int main() {
         if (flag == 0){
             prime++;
         }
+        flag = 0;
     }
-    printf("%d", prime)
+    printf("%d", prime);
     return 0;
 }
