@@ -10,10 +10,9 @@ int main() {
     for (int i=0; i<n/2; i++){
         if (nums[i]!=nums[n-i-1]){
             printf("NO");
-            break;
-        } else{
-            printf("YES");
+            return 0;
         }
     }
+    printf("Yes");
     return 0;
 }
