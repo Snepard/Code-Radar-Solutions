@@ -11,6 +11,8 @@ int main() {
         if(nums[i]<s){
             ss = s;
             s = nums[i];
+        } else if(nums[i]<ss){
+            ss = nums[i];
         }
     }
     printf("%d", ss);
