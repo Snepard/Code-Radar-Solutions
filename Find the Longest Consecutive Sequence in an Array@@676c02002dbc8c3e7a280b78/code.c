@@ -10,13 +10,37 @@ void bubbleSort(int arr[], n){
     }
 }
 
-int main() {
-    int n;
-    scanf("%d", &n);
-    int num[n];
-    for(int i=0; i<n; i++){
-        scanf("%d", &num[i]);
-    }
+void insertLast(int arr[], int *m, int val) {
+    arr[*m] = val;
+    (*m)++;
+}
 
+int maxVal(int arr[], n){
+    int max = arr[0];
+    for (int i=0; i<n; i++){
+        if (arr[i]>max){
+            max = arr[i];
+        }
+    }
+    return max;
+}
+
+int main() {
+    int n, m=1, c;
+    scanf("%d", &n);
+    int nums[n], count[1];
+    for(int i=0; i<n; i++){
+        scanf("%d", &nums[i]);
+    }
+    bubbleSort(nums, n);
+    for(int i=0; i<n; i++){
+        if(nums[i+1] == nums[i]+1){
+            c++;
+        }else{
+            insertLast(count,&m,c)
+            c == 0;
+        }
+    }
+    print("%d", maxVal(count, m))
     return 0;
 }
