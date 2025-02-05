@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 int rightMax(int arr[], int x, int n){
+    if (x==n-1){
+        return -1;
+    }
     int max = arr[x+1];
     for (int i=x+1; i<n; i++){
         if(arr[i]>max){
