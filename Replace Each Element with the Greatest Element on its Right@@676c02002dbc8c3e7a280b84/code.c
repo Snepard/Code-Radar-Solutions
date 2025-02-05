@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int rightMax(int arr[], int x, int n){
-    int max = arr[x];
-    for (int i=x; i<n; i++){
+    int max = arr[x+1];
+    for (int i=x+1; i<n; i++){
         if(arr[i]>max){
             max = arr[i];
         }
@@ -18,7 +18,7 @@ int main() {
         scanf("%d", &nums[i]);
     }
     for (int i=0; i<n; i++){
-        nums[i] = rightMax(nums,i+1,n);
+        nums[i] = rightMax(nums,i,n);
         printf("%d ", nums[i]);
     }
     return 0;
