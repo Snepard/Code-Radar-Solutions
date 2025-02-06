@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int isPalindrome(int n){
+bool isPalindrome(int n){
     int rev = 0;
     while(n>0){
         int dig = n%10;
@@ -8,9 +8,9 @@ int isPalindrome(int n){
         n/10;
     }
     if (rev == n){
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 int main() {
