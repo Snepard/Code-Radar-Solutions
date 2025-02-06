@@ -1,22 +1,35 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <limits.h>
 
 int main() {
     int n;
     scanf("%d", &n);
     int nums[n];
-    for (int i=0; i<n; i++){
+    for (int i = 0; i < n; i++) {
         scanf("%d", &nums[i]);
     }
-    int m1=nums[0], m2=nums[0];
-    for (int i=0; i<n; i++){
-        if(nums[i]>m1){
-            m2 = m1;
-            m1 = nums[i];
-        } else if (nums[i]>m2){
-            m2 = nums[i];
+    int max1 = INT_MIN, max2 = INT_MIN;
+    int min1 = INT_MAX, min2 = INT_MAX;
+
+    for (int i = 0; i < n; i++) {
+        if (nums[i] > max1) {
+            max2 = max1;
+            max1 = nums[i];
+        } else if (nums[i] > max2) {
+            max2 = nums[i];
+        }
+
+        if (nums[i] < min1) {
+            min2 = min1;
+            min1 = nums[i];
+        } else if (nums[i] < min2) {
+            min2 = nums[i];
         }
     }
-    printf("%d", m1*m2);
+
+    int product1 = max1 * max2;
+    int product2 = min1 * min2;
+
+    printf("%d", product1 > product2 ? product1 : product2);
     return 0;
-} 
+}
