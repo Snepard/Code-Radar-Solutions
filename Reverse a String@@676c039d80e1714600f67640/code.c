@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char str[100], nstr[100];
+    char str[20], nstr[20];
     fgets(str, 10, stdin);
     int n = strlen(str);
     for (int i=0; i<n; i++){
