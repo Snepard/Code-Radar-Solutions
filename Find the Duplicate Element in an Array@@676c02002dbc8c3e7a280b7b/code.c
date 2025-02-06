@@ -11,7 +11,7 @@ int main() {
         for (int j=0; j<n; j++){
             if (nums[i]==nums[j]){
                 printf("%d",&nums[i]);
-                break;
+                return 0;
             }
         }
     }
