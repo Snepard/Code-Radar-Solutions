@@ -19,9 +19,9 @@ int main() {
         scanf("%d", &nums[i]);
     }
     bubbleSort(nums,n);
-    for (int i=0; i<n; i++){
-        if(nums[i+1] != nums[i]+1){
-            printf("%d", nums[i]+1);
+    for (int i=1; i<n; i++){
+        if(nums[i] != nums[i]-1){
+            printf("%d", nums[i]);
             break;
         }
     }
