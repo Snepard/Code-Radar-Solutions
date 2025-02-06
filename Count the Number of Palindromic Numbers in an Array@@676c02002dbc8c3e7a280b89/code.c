@@ -1,18 +1,12 @@
 #include <stdio.h>
-#include <stdbool.h>
 
-bool isPalindrome(int n){
-    int rev = 0; 
-    if (rev == n){
-        return true;
-    }
+int Palindrome(int n, int rev=0){
     while(n>0){
         int dig = n%10;
         rev = (rev*10) + dig;
         n/10;
     }
-  
-    return false;
+    return rev;
 }
 
 int main() {
@@ -21,7 +15,7 @@ int main() {
     int nums[a];
     for (int i=0; i<a; i++){
         scanf("%d", &nums[i]);
-        if (isPalindrome(nums[i])){
+        if (Palindrome(nums[i]) == nums[i]){
             count++;   
         }
     }
