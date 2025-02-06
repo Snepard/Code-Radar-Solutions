@@ -20,7 +20,7 @@ int main() {
     }
     bubbleSort(nums, n);
     if (n%2==0){
-        printf("%d", (nums[n/2]+nums[(n/2)+1])/2);
+        printf("%d", (nums[n/2]+nums[(n/2)-1])/2);
     }else {
         printf("%d", nums[n/2]);
     }
