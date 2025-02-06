@@ -12,7 +12,6 @@ int main() {
     for (int i=0; i<n; i++){
         nstr[i] = str[n-i-1];
     }
-    nstr[n] = '\0';
     printf("%s", nstr);
     return 0;
 }
