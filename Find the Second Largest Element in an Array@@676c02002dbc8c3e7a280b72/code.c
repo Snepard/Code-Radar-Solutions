@@ -13,6 +13,8 @@ int main() {
         if(nums[i]>l){
             sl = l;
             l = nums[i];
+        }  else if (nums[i] > sl && nums[i] < l) {  
+            sl = nums[i];
         }
     }
     if(sl == INT_MIN){
