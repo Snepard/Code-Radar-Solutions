@@ -3,8 +3,9 @@
 int main() {
     char str[10], nstr[10];
     fgets(str, 10, stdin);
+    int n = strlen(str);
     for (int i=0; i<10; i++){
-        nstr[i] = str[10-i-1];
+        nstr[i] = str[n-i-1];
     }
     printf("%s", nstr);
     return 0;
