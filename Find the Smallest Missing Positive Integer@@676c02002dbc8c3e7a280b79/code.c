@@ -21,7 +21,7 @@ int main() {
     bubbleSort(nums,n);
     for (int i=1; i<n; i++){
         if(nums[i] != nums[i]-1){
-            printf("%d", nums[i]);
+            printf("%d", nums[i]+1);
             break;
         }
     }
