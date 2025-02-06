@@ -1,4 +1,15 @@
 #include <stdio.h>
+void bubbleSort(int nums[], int n){
+    for (int i=0; i<n-1; i++){
+        for (int j=0; j<n-i-1; j++){
+            if(nums[j]>nums[j+1]){
+                int temp = nums[j+1];
+                nums[j+1] = nums[j];
+                nums[j] = temp;
+            }
+        }
+    }
+}
 
 int main() {
     int n;
@@ -7,15 +18,7 @@ int main() {
     for (int i=0; i<n; i++){
         scanf("%d", &nums[i]);
     }
-    int max = nums[0], min = nums[0];
-    for (int i=0; i<n; i++){
-        if (nums[i]>max){
-            max = nums[i];
-        }
-        if (nums[i]<min){
-            min = nums[i];
-        }
-    }
-    printf("%d", (max+min)/2);
+    bubbleSort(nums, n);
+    printf("%d", nums[n/2]);
     return 0;
 }
