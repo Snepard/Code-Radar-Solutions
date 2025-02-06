@@ -19,6 +19,10 @@ int main() {
         scanf("%d", &nums[i]);
     }
     bubbleSort(nums, n);
-    printf("%d", nums[n/2]);
+    if (n%2==0){
+        printf("%d", (nums[n/2]+nums[(n/2)+1])/2);
+    }else {
+        printf("%d", nums[n/2]);
+    }
     return 0;
 }
