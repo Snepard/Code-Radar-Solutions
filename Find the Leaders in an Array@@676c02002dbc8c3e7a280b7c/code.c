@@ -5,18 +5,17 @@ int main() {
     scanf("%d", &n);
     int nums[n];
     for (int i=0; i<n; i++){
-        scanf("%d", &nums[n]);
+        scanf("%d", &nums[i]);
     }
     for (int i=0; i<n; i++){
         for (int j=i+1; j<n; j++){
             if (nums[i]<nums[j]){
                 flag = 0;
+                break;
             }
         }
         if (flag == 1){
             printf("%d ", nums[i]);
-        } else {
-            flag = 1;
         }
     }
     return 0;
