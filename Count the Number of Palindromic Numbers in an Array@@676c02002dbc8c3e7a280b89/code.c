@@ -19,7 +19,7 @@ int main() {
     int nums[a];
     for (int i=0; i<a; i++){
         scanf("%d", &nums[i]);
-        if (isPalindrome(nums[i]) == 1){
+        if (isPalindrome(nums[i])){
             count++;   
         }
     }
