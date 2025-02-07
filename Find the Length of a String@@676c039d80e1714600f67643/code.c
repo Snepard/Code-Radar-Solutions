@@ -4,7 +4,10 @@
 int main() {
     char str[20];
     fgets(str, 20, stdin);
-    str[strcspn(str, "\n")] = '\0';
+    if(str[0]==" "){
+        printf("0");
+        return 0;
+    }
     printf("%d", strlen(str));
     return 0;
 }
