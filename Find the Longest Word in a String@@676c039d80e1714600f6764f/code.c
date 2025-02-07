@@ -14,7 +14,7 @@ int main() {
     fgets(str,50,stdin);
     int start = 0, len = strlen(str), maxlen = 0;
 
-    for (int i=0; i<len; i++){
+    for (int i=0; i<=len; i++){
         if (str[i]==' ' || str[i]=='\0' || str[i]=='\n'){
             getSubstring(str, word, start, i-start);
             if(strlen(word)>maxlen){
