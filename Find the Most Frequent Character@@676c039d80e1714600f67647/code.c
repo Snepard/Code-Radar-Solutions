@@ -2,23 +2,25 @@
 #include <string.h>
 
 int main() {
-    int maxFreq = 0;
     char str[50];
+    int freq[256] = {0};
+    int maxFreq = 0;
+    char maxChar = '~';
+
     fgets(str, 50, stdin);
-    int n = strlen(str);
-    char maxChar = str[0];
-    for (int i=0; i<n; i++){
-        int f = 1;
-        for (int j=i+1; j<n; j++){
-            if(str[i] == str[j]){
-                f++;
-            }
-        }
-        if(f>maxFreq){
-            maxChar = str[i];
-            maxFreq = f;
+    str[strcspn(str, "\n")] = '\0';
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        freq[str[i]]++;
+    }
+
+    for (int i = 0; i < 256; i++) {
+        if (freq[i] > maxFreq) {
+            maxFreq = freq[i];
+            maxChar = i;
         }
     }
+
     printf("%c", maxChar);
     return 0;
 }
