@@ -16,7 +16,7 @@ int main() {
 
     for (int i=0; i<len; i++){
         if (str[i]==' ' || str[i]=='\0' || str[i]=='\n'){
-            getSubstring(str, word, start, i-1);
+            getSubstring(str, word, start, i-start);
             if(strlen(word)>maxlen){
                 strcpy(maxstr, word);
                 maxlen = strlen(word);
