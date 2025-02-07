@@ -3,7 +3,8 @@
 #include <ctype.h>
 
 int main() {
-    char str[50], count=1;
+    char str[50];
+    int count=1;
     scanf("%s", str);
     int n = strlen(str);
     for (int i=1; i<n; i++){
