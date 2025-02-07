@@ -2,9 +2,9 @@
 #include <string.h>
 
 int main() {
-    char str[20];
+    char str[20], test[]='\r\n';
     fgets(str, 20, stdin);
-    if (str[0]=='\r\n'||str[0]=='\n'){
+    if (strcmp(str,test)||str[0]=='\n'){
         printf("0");
         return 0;
     }
