@@ -6,7 +6,7 @@ int main() {
     int count=1;
     fgets(str, 50, stdin);
     int n = strlen(str);
-    if (str[0] == '\n' || str[0] == '\0') {
+    if (str[0] == '' || str[0] == '\0') {
         printf("0");
         return 0;
     }
