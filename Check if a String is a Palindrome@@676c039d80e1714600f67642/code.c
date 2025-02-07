@@ -8,6 +8,7 @@ int main() {
     for (int i=0; i<n; i++){
         nstr[i] = str[n-i-1];
     }
+    printf("%s", nstr);
     if(nstr == str){
         printf("Yes");
     } else {
