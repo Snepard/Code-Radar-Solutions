@@ -5,6 +5,7 @@ int main() {
     char str[20], n, m;
 
     fgets(str, 20, stdin);
+    scanf("%c\n%c", &n, &m);
     str[strcspn(str, '\n')] = '\0';
 
     for (int i=0; i<strlen(str); i++){
