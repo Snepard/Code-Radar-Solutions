@@ -6,7 +6,7 @@ int main() {
     scanf("%s %c", word, &ch);
     int n = strlen(word), count=0;
     for (int i=0; i<n; i++){
-        if(char[i]==ch){
+        if(word[i]==ch){
             count++;
         }
     }
