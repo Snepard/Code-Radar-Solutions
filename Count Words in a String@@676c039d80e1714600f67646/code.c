@@ -7,7 +7,7 @@ int main() {
     int count=1;
     fgets(str, 50, stdin);
     int n = strlen(str);
-    for (int i=1; i<n; i++){
+    for (int i=1; i<n-1; i++){
         if(str[i]==' ' && isalpha(str[i-1])!=0 && isalpha(str[i+1])!=0) {
             count++;
         }
