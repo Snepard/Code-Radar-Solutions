@@ -2,12 +2,24 @@
 #include <string.h>
 
 int main() {
-    char str[20], test[]='\r\n';
-    fgets(str, 20, stdin);
-    if (strcmp(str,test)||str[0]=='\n'){
-        printf("0");
+    char str[20];
+
+    if (fgets(str, sizeof(str), stdin) == NULL) {
+        printf("0\n");
         return 0;
     }
-    printf("%d", strlen(str));
+
+    size_t len = strlen(str);
+    while (len > 0 && (str[len - 1] == '\n' || str[len - 1] == '\r' || str[len - 1] == ' ')) {
+        str[len - 1] = '\0';
+        len--;
+    }
+
+    if (len == 0) {
+        printf("0\n");
+    } else {
+        printf("%d\n", (int)len);
+    }
+
     return 0;
 }
