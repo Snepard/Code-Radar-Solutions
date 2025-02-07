@@ -24,5 +24,6 @@ int main() {
             start = i+1;
         }
     }
+    printf("%s", maxstr);
     return 0;
 }
