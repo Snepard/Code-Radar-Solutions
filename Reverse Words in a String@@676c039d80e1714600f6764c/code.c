@@ -16,7 +16,7 @@ void reverseStr(char str[]){
     int start = 0;
 
     for (int i=0; i<length; i++){
-        if(str[i] == ' '|| str[i] == '\0'){
+        if(str[i] == ' '|| str[i] == '\0' || str[i] == '\n'){
             reverseWord(str, start, i-1);
             start = i+1;
         }
