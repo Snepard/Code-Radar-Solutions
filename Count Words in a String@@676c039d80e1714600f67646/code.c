@@ -6,7 +6,7 @@ int main() {
     int count=1;
     fgets(str, 50, stdin);
     int n = strlen(str);
-    if(n==0){
+    if(n==1){
         printf(0);
         return 0;
     }
