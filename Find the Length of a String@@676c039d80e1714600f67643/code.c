@@ -5,7 +5,7 @@ int main() {
     char str[20];
 
     if (fgets(str, sizeof(str), stdin) == NULL) {
-        printf("0\n");
+        printf("0");
         return 0;
     }
 
