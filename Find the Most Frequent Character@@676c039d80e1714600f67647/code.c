@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
     int maxFreq = 0;
     char str[50];
     fgets(str, 50, stdin);
+    int n = strlen(str);
     char maxChar = str[0];
     for (int i=0; i<n; i++){
         int f = 1;
