@@ -19,6 +19,6 @@ int main() {
             maxFreq = f;
         }
     }
-    printf("%d", maxChar);
+    printf("%c", maxChar);
     return 0;
 }
