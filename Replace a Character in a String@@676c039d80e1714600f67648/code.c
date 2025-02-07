@@ -5,14 +5,17 @@ int main() {
     char str[20], n, m;
 
     fgets(str, 20, stdin);
-    scanf("%c\n%c", &n, &m);
-    str[strcspn(str, '\n')] = '\0';
+    str[strcspn(str, "\n")] = '\0';
 
-    for (int i=0; i<strlen(str); i++){
-        if(str[i]==n){
+    scanf(" %c %c", &n, &m);  
+
+    int length = strlen(str);
+    for (int i = 0; i < length; i++) {
+        if (str[i] == n) {
             str[i] = m;
         }
     }
-    printf("%s", str);
+
+    printf("%s\n", str);
     return 0;
 }
