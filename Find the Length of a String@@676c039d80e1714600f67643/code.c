@@ -4,7 +4,7 @@
 int main() {
     char str[20];
     fgets(str, 20, stdin);
-    if(str[0]==" "){
+    if(str[0]==' '){
         printf("0");
         return 0;
     }
