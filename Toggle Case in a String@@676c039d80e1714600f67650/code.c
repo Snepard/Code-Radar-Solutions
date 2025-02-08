@@ -13,5 +13,6 @@ int main() {
             str[i] = toupper(str[i]);
         }
     }
+    printf("%s", str);
     return 0;
 }
