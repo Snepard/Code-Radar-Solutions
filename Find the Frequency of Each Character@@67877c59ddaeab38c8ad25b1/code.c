@@ -12,7 +12,7 @@ int main() {
                 freq++;
             }
         }
-        printf("%c: %d", str[i], freq);
+        printf("%c: %d\n", str[i], freq);
     }
     return 0;
 }
