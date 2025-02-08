@@ -15,7 +15,7 @@ int main() {
                 }
             }
             printf("%c: %d\n", str[i], freq);
-            visited[str[i]] == 1;
+            visited[str[i]] = 1;
         }
     }
     return 0;
