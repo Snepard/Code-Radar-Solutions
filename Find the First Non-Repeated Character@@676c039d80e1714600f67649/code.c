@@ -14,7 +14,7 @@ int main() {
             }
         }
         if (flag == 1){
-            printf("%d", str[i]);
+            printf("%c", str[i]);
             return 0;
         }
     }
