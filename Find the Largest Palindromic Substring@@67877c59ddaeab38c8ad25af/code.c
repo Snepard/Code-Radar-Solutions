@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-int expand(char str[], int left, int right, int start) {
+int expand(char str[], int left, int right, int *start) {
     int n = strlen(str);
     while (left >= 0 && right < n && str[left] == str[right]) {
         left--;
         right++;
     }
     int len = right - left - 1;
-    start = left + 1;
+    *start = left + 1;
     return len;
 }
 
