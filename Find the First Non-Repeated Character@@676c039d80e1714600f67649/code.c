@@ -6,14 +6,14 @@ int main() {
     fgets(str, 20, stdin);
     int n = strlen(str);
     for (int i=0; i<n; i++){
-        int flag = 0;
+        int flag = 1;
         for (int j=i; j<n; j++){
             if(str[i]==str[j]){
-                flag = 1;
+                flag = 0;
                 break;
             }
         }
-        if (flag == 0){
+        if (flag == 1){
             printf("%d", str[i]);
             return 0;
         }
