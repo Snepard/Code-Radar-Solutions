@@ -11,9 +11,9 @@ int main() {
     }
     strcat(s1,s1);
     if (strstr(s1, s2) != NULL) {
-        printf("Yes");
-    } else{
         printf("No");
+    } else{
+        printf("Yes");
     }
     return 0;
 }
