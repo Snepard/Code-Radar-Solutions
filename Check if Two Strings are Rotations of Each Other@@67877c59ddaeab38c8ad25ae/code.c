@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char s1[50], s2[50];
+    char s1[40], s2[20];
     fgets(s1, 20, stdin);
     fgets(s2, 20, stdin);
     if (strlen(s1) != strlen(s2)){
