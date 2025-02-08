@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int expand(char str[], int left, int right, int start) {
     int n = strlen(str);
