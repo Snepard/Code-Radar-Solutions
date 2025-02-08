@@ -28,9 +28,9 @@ int main() {
             maxLen = len2;
             startIndex = start2;
         }
-        for (int i = startIndex; i < startIndex + maxLen; i++) {
-            printf("%c", str[i]);
-        }
+    }
+    for (int i = startIndex; i < startIndex + maxLen; i++) {
+        printf("%c", str[i]);
     }
     return 0;
 }
