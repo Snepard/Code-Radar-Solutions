@@ -13,7 +13,7 @@ void reverse(char str[]) {
 }
 
 int main() {
-    char input[50], str[50];
+    char input[50], str[50], rstr[50];
     fgets(input, 50, stdin);
     int n = strlen(input), j=0;
     for (int i=0; i<n; i++){
@@ -21,8 +21,12 @@ int main() {
             str[j++] = input[i];
         }
     }
+
+    strcpy(rstr, str);
+    reverse(rstr);
     int m = strlen(str);
-    if (strcmp(str, reverse(str)) == 0){
+
+    if (strcmp(str, rstr) == 0){
         printf("Yes");
     }else{
         printf("No");
