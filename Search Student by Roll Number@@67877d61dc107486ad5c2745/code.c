@@ -20,5 +20,6 @@ int main() {
             return 0;
         }
     }
+    printf("Student not found");
     return 0;
 }
