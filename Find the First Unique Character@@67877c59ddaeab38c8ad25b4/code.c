@@ -7,7 +7,7 @@ int main() {
     int n = strlen(str);
     for (int i=0; i<n; i++){
         int flag = 0;
-        for (int j=i+1; j<n; j++){
+        for (int j=i; j<n; j++){
             if (str[i] == str[j]){
                 flag = 1;
             }
