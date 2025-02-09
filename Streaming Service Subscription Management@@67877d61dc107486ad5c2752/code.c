@@ -29,6 +29,6 @@ int main() {
             pcount++;
         }
     }
-    printf("Basic: %.2f (%d users), Standard: %.2f (%d users), Premium: %.2f (%d users)\n", btotal, bcount, stotal, scount, ptotal, pcount);
+    printf("Basic: %d users, Revenue: %.2f; Standard: %d users, Revenue: %.2f; Premium: %d users, Revenue: %.2f", bcount, btotal, scount, stotal, pcount, ptotal);
     return 0;
 }
