@@ -4,7 +4,7 @@ struct Student {
     int rn;
     char name[20];
     float marks;
-}
+};
 
 int main() {
     int n, rn;
