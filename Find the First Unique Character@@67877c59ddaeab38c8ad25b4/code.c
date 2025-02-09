@@ -4,8 +4,9 @@
 int main() {
     char str[20];
     fgets(str, 20, stdin);
-    int n = strlen(str), flag = 0;
+    int n = strlen(str);
     for (int i=0; i<n; i++){
+        int flag = 0;
         for (int j=i+1; j<n; j++){
             if (str[i] == str[j]){
                 flag = 1;
