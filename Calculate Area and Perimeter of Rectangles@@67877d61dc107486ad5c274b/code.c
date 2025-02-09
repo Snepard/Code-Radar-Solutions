@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 struct rectangle {
-    int l;
-    int b;
+    float l;
+    float b;
 };
 
 int main() {
