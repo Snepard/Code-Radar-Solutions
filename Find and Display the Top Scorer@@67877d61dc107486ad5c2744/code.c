@@ -11,9 +11,9 @@ int main() {
     scanf("%d", &n);
     struct students s[n];
     for (int i=0; i<n; i++){
-        scanf("%d %s %f", &s[i].rn, &s[i].name, &s[i].marks);
+        scanf("%d %s %f", &s[i].rn, s[i].name, &s[i].marks);
     }
-    int tScore = s[0].marks;
+    float tScore = s[0].marks;
     for (int i=1; i<n; i++){
         if(s[i].marks > tScore){
             tScore = s[i].marks;
