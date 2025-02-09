@@ -28,10 +28,10 @@ int main() {
         scanf("%d %s %f", &st[i].rn, &st[i].name, &st[i].marks);
     }
 
-    bubbleSort(students, n);
+    bubbleSort(st, n);
     
     for (int i = 0; i < n; i++) {
-        printf("%d %s %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
+        printf("%d %s %.2f\n", st[i].rollNumber, st[i].name, st[i].marks);
     }
     return 0;
 }
