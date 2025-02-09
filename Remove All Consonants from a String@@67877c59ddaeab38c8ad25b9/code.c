@@ -7,7 +7,8 @@ int main() {
     fgets(str, 30, stdin);
     int n = strlen(str), j=0;
     for (int i=0; i<n; i++){
-        if (tolower(str[i])=='a'||tolower(str[i])=='e'||tolower(str[i])=='i'||tolower(str[i])=='o'||tolower(str[i])=='u'||tolower(str[i])==' '){
+        char ch = tolower(str[i]);
+        if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||!isalpha(ch)){
             nstr[j++] = str[i];
         }
     }
