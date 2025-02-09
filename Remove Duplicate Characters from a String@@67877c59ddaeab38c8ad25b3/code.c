@@ -14,6 +14,7 @@ int main() {
             visited[str[i]] = 1;
         }
     }
+    nstr[j] = '\0'; 
     printf("%s", nstr);
     return 0;
 }
