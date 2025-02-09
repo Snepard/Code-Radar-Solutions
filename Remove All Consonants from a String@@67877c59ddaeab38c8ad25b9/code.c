@@ -11,6 +11,7 @@ int main() {
             nstr[j++] = str[i];
         }
     }
+    nstr[j] = '\0';
     printf("%s", nstr);
     return 0;
 }
