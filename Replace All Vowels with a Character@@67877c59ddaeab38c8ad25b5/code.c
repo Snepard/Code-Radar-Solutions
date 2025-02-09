@@ -8,8 +8,7 @@ int main() {
     scanf("%c", &ch);
     int n = strlen(str);
     for (int i=0; i<n; i++){
-        str[i] = tolower(str[i]);
-        if (str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'){
+        if (tolower(str[i])=='a'||tolower(str[i])=='e'||tolower(str[i])=='i'||tolower(str[i])=='o'||tolower(str[i])=='u'){
             str[i] = ch;
         }
     }
