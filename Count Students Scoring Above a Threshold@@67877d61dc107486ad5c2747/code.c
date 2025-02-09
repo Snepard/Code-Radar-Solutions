@@ -15,7 +15,7 @@ int main() {
         scanf("%d %s %f", &st[i].rn, &st[i].name, &st[i].marks);
     }
     scanf("%f", &threshold);
-    for (int i=0; i<; i++){
+    for (int i=0; i<n; i++){
         if(st[i].marks > threshold){
             count++;
         }
