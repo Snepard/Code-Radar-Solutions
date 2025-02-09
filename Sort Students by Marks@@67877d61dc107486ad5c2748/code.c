@@ -31,7 +31,7 @@ int main() {
     bubbleSort(st, n);
     
     for (int i = 0; i < n; i++) {
-        printf("%d %s %.2f\n", st[i].rn, st[i].name, st[i].marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", st[i].rn, st[i].name, st[i].marks);
     }
     return 0;
 }
