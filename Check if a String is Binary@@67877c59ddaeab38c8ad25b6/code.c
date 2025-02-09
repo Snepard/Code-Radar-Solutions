@@ -6,7 +6,7 @@ int main() {
     fgets(str, 50, stdin);
     int n = strlen(str);
     for (int i=0; i<n; i++){
-        if (str[i]!='0'||str[i]!='1'){
+        if (str[i]!='0'&& str[i]!='1'){
             printf("No");
             return 0;
         }
