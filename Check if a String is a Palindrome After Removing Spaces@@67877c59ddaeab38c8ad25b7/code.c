@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 void reverse(char str[]) {
     int i, j;
@@ -18,7 +19,7 @@ int main() {
     int n = strlen(input), j=0;
     for (int i=0; i<n; i++){
         if(input[i]!=' '){
-            str[j++] = input[i];
+            str[j++] = tolower(input[i]);
         }
     }
 
