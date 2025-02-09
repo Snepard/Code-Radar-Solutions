@@ -8,7 +8,7 @@ struct week{
 int main() {
     float sum = 0;
     struct week day[7];
-    for (int i=0; i<n; i++){
+    for (int i=0; i<7; i++){
         scanf("%s %f", day[i].d, &day[i].temp);
         sum += day[i].temp;
     }
