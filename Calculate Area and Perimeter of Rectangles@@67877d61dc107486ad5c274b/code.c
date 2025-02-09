@@ -15,7 +15,7 @@ int main() {
     }
 
     for (int i = 0; i < n; i++) {
-        printf("Rectangle %d: Area = %d, Perimeter = %d\n", i + 1, (r[i].l * r[i].b), 2 * (r[i].l + r[i].b));
+        printf("Rectangle %d: Area = %.2f, Perimeter = %.2f\n", i + 1, (r[i].l * r[i].b), 2 * (r[i].l + r[i].b));
     }
 
     return 0;
