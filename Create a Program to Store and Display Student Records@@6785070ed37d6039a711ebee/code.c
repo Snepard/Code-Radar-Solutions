@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 struct Student {
     int rn;
@@ -7,15 +8,16 @@ struct Student {
 };
 
 int main() {
-    int n, rn;
-    float marks;
-    char name[20];
-
+    int n;
     scanf("%d", &n);
-    for (int i=0; i<n; i++){
-        scanf("%d %s %f", &rn, name, &marks);
-        struct Student i = {rn, name, marks};
-        printf("Roll Number: %d, Name: %s, Marks: %.2f", i.rn, i.name, i.marks);
+    
+    struct Student students[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d %s %f", &students[i].rn, students[i].name, &students[i].marks);
+    }
+    for (int i = 0; i < n; i++) {
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].rn, students[i].name, students[i].marks);
     }
     return 0;
 }
