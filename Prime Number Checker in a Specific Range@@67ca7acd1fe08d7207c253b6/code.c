@@ -1,4 +1,3 @@
-// Your code here...
 
 int isPrime(int n) {
     if (n < 2) return 0;
@@ -9,10 +8,22 @@ int isPrime(int n) {
 }
 
 void printPrimesInRange(int a, int b) {
+    int found = 0;
     for (int i = a; i <= b; i++) {
         if (isPrime(i)) {
             printf("%d ", i);
+            found = 1;
         }
     }
-    printf("No prime numbers");
+    if (!found) {
+        printf("No prime numbers");
+    }
+    printf("\n");
+}
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printPrimesInRange(a, b);
+    return 0;
 }
