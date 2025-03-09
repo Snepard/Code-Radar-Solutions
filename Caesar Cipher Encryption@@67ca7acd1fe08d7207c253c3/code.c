@@ -1,4 +1,5 @@
 // Your code here...
+#include <string.h>
 #include <ctype.h>
 
 void caesarCipher(const char message[], int shift, char encrypted[]) {
