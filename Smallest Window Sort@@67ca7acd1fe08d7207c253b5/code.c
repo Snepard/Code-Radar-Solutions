@@ -6,5 +6,5 @@ void findUnsortedSubarray(int arr[10000], int n){
             i++;
         }
     }
-    printf("%d", i)
+    printf("%d", i);
 }
